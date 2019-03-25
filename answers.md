@@ -1,43 +1,29 @@
-## Binary, Decimal, and Hex
+Convert 1100 1111 binary
 
-Complete the following problems:
+to hex: 
+CF
 
-* Convert `11001111` binary
+to decimal: 1 2 4 8 64 128
+207
 
-    to hex: cf
+Convert 4C hex
 
-    to decimal: 207
+to binary:
+0100 1100
 
+to decimal: 4 8 64
+76
 
-* Convert `4C` hex
+Convert 68 decimal
 
-    to binary:1001100
+to binary: 0100 0100
 
-    to decimal:76
+to hex: 44
 
+Explain how the CPU provides concurrency or parallelism:
+Paralellism is achieved when a cpu breaks a large problem down into smaller subtasks; computes each task simultaneously and then combines subtasks together at the end to produce the final answer. This allows multiple problems to be solved at the same time; rather than having to wait sequentially to solve a list of processes.
+Paralellism is achieved through the use of multiple CPU cores and cannot be achieved on a single core processor due to paralellism requiring processes to be completed at the same INSTANT. In concurrency process lifespans can overlap but they do not need to be completed at the same time. However because they are not completed at the same time there needs to be runtime communication between processes to ensure data is transferred between processes correctly resulting in the expected answer.
 
-* Convert `68` decimal
-
-    to binary: 1000100
-
-    to hex: 44
-
-
-## Architecture
-
-One paragraph-ish:
-
-* Explain how the CPU provides concurrency:
-
-    Concurrency is described as in computer terms as completing things out of order or in a partial order; while not affecting the final outcome.
-    A CPU leverages internal memory caches as well as all the the components at it's disposal to off load tasks to each respective component required to do a specific task. While each component is completed their respective tasks, the CPU is completing the bridges and  once each component flags the CPU that they are done, the CPU then compiles all the data performs the necessary computations and sends the end result to the proposed final destination.
-
-* Describe assembly language and machine language:
-Assembly language is the use of mnemonics and special syntax to represent low-level computer operations. It frees a CPU from having to do repetitive calculations by simplifying the machine code prior to feeding it into the CPU for computation
-
-Machine language is a programming language that written in binary and hexadecimal, used to communicate directly with a cpu.
-
-* Suggest the role that graphics cards play in machine learning:
-GPU's are designed specifically for performing calculations, unlike a CPU that has to split it's computing power amongst all computer operations from connecting peripherals, interfacing with networks, to producing audio.
-
-GPU's are not burdened by the totality of computer operation and can be hyper focused on data computations. Since GPU's are not concerned with other operations they are smaller than CPU's; therefore more GPU's can be packed into a small space for concurrent data computation.
+Describe assembly language and machine language:
+Machine language is the binary 1's and 0's a cpu uses to complete processes. Due to it's nature and structure it is not really readable by human standards without breaking down and interpreting it piece by piece.
+Assembly language on the other hand is a low level programming language where machine code is broken into parts and on those parts are given small descriptions explaining the meaning and purpose of the proceeding machine code to provide a more human readable structure.
